@@ -37,7 +37,7 @@ semantic-segmentation/datasets
 
 #### Train
 
-//We utilize 4 Nvidia RTX 3090 (24G) GPUs for training.
+[comment]: <>  We utilize 4 Nvidia RTX 3090 (24G) GPUs for training.
 
 The training code is coming soon.
 + Run the semantic segmentation experimetns from GTA5 to CityScapes:
