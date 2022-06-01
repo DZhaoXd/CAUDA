@@ -36,17 +36,19 @@ semantic-segmentation/datasets
 
 
 #### Train
-
-[comment]: <>  We utilize 4 Nvidia RTX 3090 (24G) GPUs for training.
-
 The training code is coming soon.
+<div style='display: none'>
+We utilize 4 Nvidia RTX 3090 (24G) GPUs for training.
+
+
 + Run the semantic segmentation experimetns from GTA5 to CityScapes:
 ```
 [comment]: <>  export NGPUS=4
 // train on source data
 //python -m torch.distributed.launch --nproc_per_node=$NGPUS train_src.py -cfg configs/deeplabv2_ur101_src.yaml OUTPUT_DIR results/uncertainty
 //```
-
+</div>
+    
 #### Evaluation
 + Evaluate the performances on CityScapes.
 ```
