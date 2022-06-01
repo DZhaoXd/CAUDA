@@ -40,13 +40,17 @@ The training code is coming soon.
     
 #### Evaluation
 + Evaluate the performances on CityScapes.
-```
-# evaluate the last checkpoint (default)
-python test_se.py -cfg configs/deeplabv2_ur101_src.yaml resume results/CAUDA/model_iter015000.pth
 
-# evaluate all models
-python test.py -cfg configs/deeplabv2_ur101_src.yaml resume results/CAUDA
-```
+# evaluate the cluster alignment checkpoint
+python test.py -cfg configs/deeplabv2_ur101_src.yaml resume results/CAUDA/model_iter015000.pth
+The checkpoints and logs can be found at [link](https://drive.google.com/drive/folders/1Pn60zo9wAZ656KiuKeqtnkRZNQgbnqcM?usp=sharing).
+
+# evaluate the single-round self-training checkpoint
+python test.py -cfg configs/deeplabv2_r101_tgt_self_distill.yaml resume results/CAUDA_SST/model_iter015000.pth
+The checkpoints and logs can be found at [link](https://drive.google.com/drive/folders/1Pn60zo9wAZ656KiuKeqtnkRZNQgbnqcM?usp=sharing).
+
+# evaluate the multi-round self-training checkpoint
+python test.py -cfg configs/deeplabv2_r101_tgt_self_distill.yaml resume results/CAUDA_MST/model_iter015000.pth
 The checkpoints and logs can be found at [link](https://drive.google.com/drive/folders/1Pn60zo9wAZ656KiuKeqtnkRZNQgbnqcM?usp=sharing).
 
 ### Acknowledge
