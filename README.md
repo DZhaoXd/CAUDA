@@ -37,15 +37,15 @@ semantic-segmentation/datasets
 
 #### Train
 
-We utilize 4 Nvidia RTX 3090 (24G) GPUs for training.
+//We utilize 4 Nvidia RTX 3090 (24G) GPUs for training.
 
 The training code is coming soon.
-#+ Run the semantic segmentation experimetns from GTA5 to CityScapes:
-#```
-#export NGPUS=4
-# train on source data
-#python -m torch.distributed.launch --nproc_per_node=$NGPUS train_src.py -cfg configs/deeplabv2_ur101_src.yaml OUTPUT_DIR results/uncertainty
-#```
+//+ Run the semantic segmentation experimetns from GTA5 to CityScapes:
+//```
+//export NGPUS=4
+// train on source data
+//python -m torch.distributed.launch --nproc_per_node=$NGPUS train_src.py -cfg configs/deeplabv2_ur101_src.yaml OUTPUT_DIR results/uncertainty
+//```
 
 #### Evaluation
 + Evaluate the performances on CityScapes.
@@ -60,4 +60,4 @@ The checkpoints and logs can be found at [link](https://drive.google.com/drive/f
 
 ### Acknowledge
 
-The implementation is based on [FADA](https://github.com/JDAI-CV/FADA). Thanks for their excellent projects.
+The implementation is based on [FADA](https://github.com/JDAI-CV/FADA). Thanks for their great projects.
