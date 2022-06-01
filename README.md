@@ -43,19 +43,15 @@ The training code is coming soon.
 ```
 python test.py -cfg configs/deeplabv2_ur101_src.yaml resume results/CAUDA/model_iter015000.pth
 ```
-The checkpoints and logs can be found at [link](https://drive.google.com/drive/folders/1Pn60zo9wAZ656KiuKeqtnkRZNQgbnqcM?usp=sharing).
-
-+ Evaluate the single-round self-training checkpoint
-```
-python test.py -cfg configs/deeplabv2_r101_tgt_self_distill.yaml resume results/CAUDA_SST/model_iter015000.pth
-```
-The checkpoints and logs can be found at [link](https://drive.google.com/drive/folders/1Pn60zo9wAZ656KiuKeqtnkRZNQgbnqcM?usp=sharing).
+The checkpoints and logs can be found at [link](https://pan.baidu.com/s/1B07Wrp-FKO-4fbEPvh5XHQ).
+The extraction code is mimu.
 
 + Evaluate the multi-round self-training checkpoint
 ```
 python test.py -cfg configs/deeplabv2_r101_tgt_self_distill.yaml resume results/CAUDA_MST/model_iter015000.pth
 ```
-The checkpoints and logs can be found at [link](https://drive.google.com/drive/folders/1Pn60zo9wAZ656KiuKeqtnkRZNQgbnqcM?usp=sharing).
+The checkpoints and logs can be found at [link](https://pan.baidu.com/s/1DmkVj1VHHc9CO08lWrw1gg).
+The extraction code is c13y.
 
 ### Acknowledge
 
